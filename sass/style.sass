@@ -1,0 +1,136 @@
+$main-color: #a20c1f
+$additional-color: #811C19
+*
+    margin: 0
+html
+    background: url('/img/body.jpg')
+    background-attachment: fixed
+    background-repeat: no-repeat
+    .container
+        width: 70%
+        margin: 0 auto
+        .header-top
+            position: fixed !important
+            height: 90px
+            width: 70%
+            background-color: white
+            .main-nav
+                display: flex
+                justify-content: space-around
+                font-size: 26px
+                color: white
+                padding-top: 10px
+                &__descr
+                    margin-top: auto
+                    margin-bottom: auto
+                &__wrapper
+                    display: flex
+                &__logo
+                    width: 60px
+                    height: 60px
+                    &_descr
+                        margin-top: auto
+                        margin-bottom: auto
+                        margin-left: 10px    
+                &__border
+                    border-right: 2px solid #000000
+                    padding-right: 60px
+                &__border:last-child
+                    border: none
+                a 
+                    text-decoration: none
+                    color: black
+                a:hover 
+                    color: $main-color
+                .btn
+                    width: 60px
+                    height: 30px
+                    vertical-align: middle
+                    font-size: 20px
+                    background-color: #fff
+                    border: 1px solid $additional-color
+                    border-radius: 10px
+                    box-shadow: 0px 0px 3px 2px $main-color
+                    color: black
+                .btn:hover
+                    background-color:#A50D14 
+                    color: white
+                    cursor: pointer
+    .container
+        width: 70%
+        margin: 0 auto
+        .main
+            padding-top: 90px
+            height: 100%
+            background-color: rgba(255, 255, 255, 0.9)
+            padding-left: 20px
+            padding-right: 20px
+            .self
+                display: flex
+                justify-content: space-around
+                padding-top: 40px
+                &__photo
+                    img
+                        width: 300px
+                        border: 1px solid $main-color
+                        border-radius: 100%
+                        box-shadow: 0px 0px 10px 8px $main-color
+            .works
+                padding-top: 20px
+                .tabs
+                    margin-top: 20px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-bottom: 0
+                    padding-left: 0
+                    list-style-type: none
+                    .tab
+                        width: 220px
+                        height: 50px
+                        border: 2px solid #d0d0d0
+                        font-size: 18px
+                        font-weight: 400
+                        text-transform: uppercase
+                        text-align: center
+                        line-height: 48px
+                        transform: skewX(-25deg)
+                        margin: 0 10px
+                        cursor: pointer
+                        border: 1px solid $additional-color
+                        box-shadow: 0px 0px 3px 2px $main-color
+                        div
+                            transform: skewX(25deg)
+                    .tab:hover
+                        background-color:#A50D14 
+                        color: white
+                        cursor: pointer
+                .cards
+                    display: flex
+                    margin-top: 30px
+                    justify-content: space-around
+                    flex-wrap: wrap
+                    .card
+                        width: 600px
+                        height: 300px
+                        border: 1px solid $main-color
+                        margin-bottom: 30px
+                        border-radius: 5px
+                        box-shadow: 0px 0px 10px 2px $main-color
+                        overflow: hidden
+                        .pulse
+                            max-width: 100%
+                        .yoga
+                            max-width: 100%
+                        .keksby
+                            max-width: 100%
+            .contacts
+                padding-top: 20px
+            .title
+                margin-top: 50px
+                text-transform: uppercase
+                color: $additional-color
+                text-align: center
+                font-size: 28px
+                font-weight: 700
+
